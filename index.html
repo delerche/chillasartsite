@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+    <head>
+        <meta charset="utf-8">
+        <title>Chilla's Artgame</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+        <script src="indexjava.js" charset="UTF-8"></script>
+    <!-- FIXED HEADER AT THE TOP OF EVERYTHING-->
+    <header class="sticky-header">
+        <h1>チ ラ ズ ア ート</h1>
+    </header>
+     <!--#DIV01.00:HEADER // Overall Div Size-->
+    <div class="divheader">
+     <!--#DIV01.01:HEADER_BACKGROUND // Intro Image.-->
+        <img src="img\headerimage.gif">
+        <div class="divheader_parent">
+            <div class="divheader_left">
+                <div class="divheader_leftcontent">
+                    <!--#LEFT: For Icon+Intro-->
+                    <div class="divheader_font">CHILLA'S ART GAMES</div>
+                    <div class="divheader_fontlink">チ ラ ズ ア ート</div>
+                </div>
+            </div>
+            <div class="divheader_right"></div>
+            <!--Nothing here for the sake of focusing on BG image-->
+        </div>
+        </div>
+    </div>
+    <!--Display of the main games-->
+    <div class="divgames">
+        <div class="divgames_left">
+            <div class="divgames_lefttitle">
+                <div class="divgames_lefttitletext">NEWEST RELEASE</div>
+                <div class="divgames_lefttitletext_small">発売</div>
+            </div>
+            <!--This is where the gallery now goes in, fade effect-->
+            <div class="divgames_leftdisplay" onclick="myFunction()">
+                <img src="img\missingchildren01.jpg">
+                <img src="img\missingchildren02.jpg">
+                <img src="img\missingchildren03.jpg">
+                <img src="img\missingchildren04.jpg">
+                <img src="img\missingchildren05.jpg">
+            </div>
+            <!-- This is the text underneath the Gallery-->
+            <div class="divgames_leftdescription">
+                <div class="divgames_leftdescription_title">Missing Children | 行方不明</div>
+                <div class="divgames_leftdescription_text">佐藤探偵捜査を手伝うために警察に雇われている。探偵は何を見つけますか？<br>The Bully Detective Sato gets hired by police to help with investigations. What will she find?</div>
+            </div>
+            <!-- The Buy Button in specifically like hey buy it here HUAH-->
+            <div class="divgames_leftdescription_buy">
+                <a style="text-decoration:none" href="https://store.steampowered.com/app/1306620/Chillas_Art_Missing_Children/"><div class="divgames_leftdescription_buytext">BUY HERE</div></a>
+            </div>
+        </div>
+        <!--This is just another gallery but a title above-->
+        <div class="divgames_right">
+            <div class="divgames_lefttitle">
+                <div class="divgames_lefttitletext">BEST SELLER</div>
+                <div class="divgames_lefttitletext_small">ベストセラー</div>
+            </div>
+            <div class="divgames_rightgallery">
+                <!-- SELECTION OF FIRST GAME-->
+                <div class="divgames_rightgallery_divtop">
+                    <a href="https://store.steampowered.com/app/2793370/Chillas_Art_Shinkansen_0___0/"><img class="divgames_rightgallery_topimage"  src="img\shinkansen03.jpg"></a>
+                    <div class="divgames_rightgallery_toptext">新幹線 0号</div>
+                </div>
+                <!-- SELECTION OF SECOND GAME-->
+                <div class="divgames_rightgallery_divmid">
+                    <a href="https://store.steampowered.com/app/2314720/Chillas_Art_Parasocial/"><img class="divgames_rightgallery_midimage" src="img\parasocial01.jpg"></a>
+                    <div class="divgames_rightgallery_midtext">パラソーシャル</div>
+                </div>           
+                <!-- SELECTION OF THIRD GAME-->         
+                <div class="divgames_rightgallery_divbot">
+                    <a href="https://store.steampowered.com/app/2367230/Chillas_Art_Night_Security/"><img class="divgames_rightgallery_botimage" src="img\nightsecurity01.jpg"></a>
+                    <div class="divgames_rightgallery_bottext">夜間警備</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ALL GAMES + REVIEWS? -->
+    <div class="divoverview_allgames">
+        <div class="divoverview_allgames_title">
+            <div class="divoverview_allgames_titletext">MORE GAMES</div>
+        </div>
+        <div class="divoverview_allgames_title">
+            <div class="divoverview_allgames_titlejpn">図書館</div>
+        </div>
+        <!-- THIS WILL BE THE MAIN AREA FOR THE ENTIRE JAVASCRIPT FUNCTION-->
+        <div class="divoverview_allgames_sectionlist"">
+            <!-- GALLERY-->
+            <div class="divoverview_allgames_list">
+            <a href="https://store.steampowered.com/app/1130620/Chillas_Art_Aka_Manto/"><img src="img\Gamecovers\Aka Mento.png"></a>
+            <a href="https://store.steampowered.com/app/1185160/Chillas_Art_Inunaki_Tunnel/"><img src="img\Gamecovers\Inunaki Tunnel.jpg"></a>
+            <a href="https://store.steampowered.com/app/1306620/Chillas_Art_Missing_Children/"><img src="img\Gamecovers\Missing Children.png"></a>
+            <a href="https://store.steampowered.com/app/1147960/Chillas_Art_Okaeri/"><img src="img\Gamecovers\Okaeri.png"></a>
+            <a href="https://store.steampowered.com/app/1267310/Chillas_Art_Onryo/"><img src="img\Gamecovers\Onryo.png"></a>
+            <a href="https://store.steampowered.com/app/2793370/Chillas_Art_Shinkansen_0___0/"><img src="img\Gamecovers\Shinkansen0.jpg"></a>
+            <a href="https://store.steampowered.com/app/1162680/Chillas_Art_Stigmatized_Property/"><img src="img\Gamecovers\Stigmatized Property.jpg"></a>
+            <a href="https://store.steampowered.com/app/1843090/Chillas_Art_The_Closing_Shift/"><img src="img\Gamecovers\The Closing Shift.jpg"></a>
+            <a href="https://store.steampowered.com/app/1228520/Chillas_Art_The_Convenience_Store/"><img src="img\Gamecovers\The Convenience Store.png"></a>
+            <a href="https://store.steampowered.com/app/1349960/Chillas_Art_The_Ghost_Train/"><img src="img\Gamecovers\The Ghost Train.jpeg"></a>
+            <a href="https://store.steampowered.com/app/1400290/Chillas_Art_Hanako/"><img src="img\Gamecovers\Hanako.jpg"></a>
+            <a href="https://store.steampowered.com/app/1503670/Chillas_Art_The_Caregiver/"><img src="img\Gamecovers\The Caregiver.jpg"></a>
+            <a href="https://store.steampowered.com/app/1744910/Chillas_Art_The_Radio_Station/"><img src="img\Gamecovers\The Radio Station.jpeg"></a>
+            <a href="https://store.steampowered.com/app/2200190/Chillas_Art_The_Karaoke/"><img src="img\Gamecovers\The Karaoke.jpg"></a>
+            <a href="https://store.steampowered.com/app/2367230/Chillas_Art_Night_Security/"><img src="img\Gamecovers\Night Security.jpg"></a>
+            <a href="https://store.steampowered.com/app/2593900/Chillas_Art_The_Kidnap/"><img src="img\Gamecovers\The Kidnap.png"></a>
+            <a href="https://store.steampowered.com/app/2200190/Chillas_Art_The_Karaoke/"><img src="img\Gamecovers\The Karaoke.jpg"></a>
+            <a href="https://store.steampowered.com/app/2367230/Chillas_Art_Night_Security/"><img src="img\Gamecovers\Night Security.jpg"></a>
+            <a href="https://store.steampowered.com/app/2593900/Chillas_Art_The_Kidnap/"><img src="img\Gamecovers\The Kidnap.png"></a>
+            <a href="https://store.steampowered.com/app/1162680/Chillas_Art_Stigmatized_Property/"><img src="img\Gamecovers\Stigmatized Property.jpg"></a>
+            </div>
+            <div class="divoverview_allgames_hoverimage"><img src="img\Overview Character.png"></div>
+        </div>
+        
+        
+    </div>
+
+    <!-- DISPLAY OF THE COMPANY -->
+    <div class="divheader">
+        <!--#DIV01.01:HEADER_BACKGROUND // Intro Image.-->
+           <img src="img\creditimage.gif">
+           <div class="divheader_parent">
+               <div class="divheader_left">
+                   <div class="divheader_leftcontent">
+                       <!--#LEFT: For Icon+Intro-->
+                       <div class="divheader_font">CODED BY KAR LERCHE</div>
+                       <div class="divheader_fontlink">©Chilla's Art, LLC All Rights Reserved.
+                    </div>
+                   </div>
+               </div>
+               <div class="divheader_right"></div>
+               <!--Nothing here for the sake of focusing on BG image-->
+           </div>
+           </div>
+       </div>
+    </body>
+</html>
